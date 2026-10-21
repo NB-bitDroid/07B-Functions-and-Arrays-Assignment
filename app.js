@@ -32,12 +32,15 @@ function handleSpaceClick() {
 function checkBoardStatas() {
    if (checkForWin() == true) {
         showWinScreen()
+        window.stop
    };
    if (checkForLoss() == true) {
         showLossScreen()
+        window.stop()
    };
    if (checkForTie() == true) {
         showTieScreen()
+        window.stop()
    };
 };
 
